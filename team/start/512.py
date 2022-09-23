@@ -15,4 +15,6 @@ h = list(hash_sha3_512.hexdigest())
 # print(result)
 
 
+# print("\nSHA3-512 Hash: ", len(h))
+
 print("\nSHA3-512 Hash: ", h)
