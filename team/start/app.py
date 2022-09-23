@@ -1,6 +1,6 @@
 from PIL import Image, ImageDraw, ImageFont
                     #(가로, 세로)
-img = Image.new("RGBA", (100,100), 0)
+img = Image.new("RGBA", (100,100), 0) #워터마크 생성
 
 soimg = Image.open(f"./img/so/2.jpg")
 
