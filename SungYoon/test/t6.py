@@ -1,4 +1,4 @@
 from stegano import lsb
 
-secret = lsb.hide("./img/test.png", "goodday")
-secret.save("goodday.png")
+secret = lsb.hide("./img/img.png", "goodday")
+secret.save("hide.png")
