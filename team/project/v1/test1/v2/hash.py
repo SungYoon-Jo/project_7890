@@ -6,8 +6,10 @@ str = input("input text : ")
 # hash256 해시 알고리즘 선정 및 인코딩 컴퓨터 저장시 바이트 변환작업
 hash_sha256 = hashlib.new("sha256", str.encode())
 
-# 위에서 입력받은 데이터를 가지고 해시값을 생성함
+# 위에서 입력받은 데이터를 가지고 16진수의 해시값을 생성함
 h = hash_sha256.hexdigest()
+# 위에서 입력받은 데이터를 가지고 인코딩된 해시값을 생성함
+hh = hash_sha256.digest()
 
 # 해시값 텍스트 저장
 f = open("../encrypt/encrypt.txt", "w")
@@ -16,6 +18,7 @@ f.close()
 
 # 해시값 확인
 print("\nsha256 Hash: ", h)
+print("hh : ", hh)
 # 해시값 길이 확인
 print("\nsha256 Hash: ", len(h))
 
