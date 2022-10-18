@@ -9,7 +9,7 @@ trackbar_name = 'fade'          # 트렉바 이름
 # ---① 트렉바 이벤트 핸들러 함수
 def onChange(x):
     alpha = x/100
-    dst = cv2.addWeighted(res1, 1-alpha, res2, alpha, 0) 
+    dst = cv2.addWeighted(res1, 1-alpha, res2, alpha, 0)
     cv2.imshow(win_name, dst)
 
 
