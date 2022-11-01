@@ -11,6 +11,9 @@ def onChange(x):
     alpha = x/100
     dst = cv2.addWeighted(res1, 1-alpha, res2, alpha, 0)
     cv2.imshow(win_name, dst)
+    
+    print("alpha : ", alpha)
+    print("x : ", x)
 
 
 # ---② 합성 영상 읽기
