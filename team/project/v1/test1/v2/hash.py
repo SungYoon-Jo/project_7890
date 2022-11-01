@@ -1,5 +1,6 @@
 import hashlib
  
+print()
 # 1차 소스 = 사용자 텍스트 입력
 str = input("input text : ")
  
@@ -18,13 +19,19 @@ f.close()
 
 # 해시값 확인
 print("\nsha256 Hash: ", h)
+
+print()
+
 print("hh : ", hh)
 # 해시값 길이 확인
 print("\nsha256 Hash: ", len(h))
 
-
+print()
 ## 해시값 인덱스 슬라이싱
 # result = []
 # for i in range(0,len(h),2):
 #     result.append(h[i:i+2])
 # print(result)
+
+
+
