@@ -21,8 +21,8 @@ img1 = cv2.imread('./img/1.jpg')
 img2 = cv2.imread('./img/2.jpg')
 # img2 = cv2.imread('./img/temp.jpg')
 
-res1 = resize(img1, (640,640))
-res2 = resize(img2, (640,640))
+res1 = resize(img1, (500,500))
+res2 = resize(img2, (500,500))
 
 # ---③ 이미지 표시 및 트렉바 붙이기
 cv2.imshow(win_name, res1)
